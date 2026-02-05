@@ -38,36 +38,11 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Digite o nome do app", Toast.LENGTH_SHORT).show();
                 return;
             }
-            //caso não ache vai ve o erro.
-            if (!abrirAplicativo(nome)) {
-                mostrarErro();
-            }
+
         });
     }
 
-    private boolean abrirAplicativo(String nome) {
-        PackageManager pm = getPackageManager();
-        //enviando que usaramos uma acao principal no sistema
-        Intent mainIntent = new Intent(Intent.ACTION_MAIN);
-        mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-        //listando aplicativos que possam ser abestos
-        List<ResolveInfo> apps = pm.queryIntentActivities(mainIntent, 0);
-        //percorrer eles até encontra o nome referente
-        for (ResolveInfo info : apps) {
-            String label = info.loadLabel(pm).toString();
 
-            if (label.equalsIgnoreCase(nome)) {
-                Intent launchIntent =
-                        pm.getLaunchIntentForPackage(info.activityInfo.packageName);
-
-                if (launchIntent != null) {
-                    startActivity(launchIntent);
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
     //popup, alertando q o app não foi encontrado
     private void mostrarErro() {
         new AlertDialog.Builder(this)

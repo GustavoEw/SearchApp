@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlay_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/bolha"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/lupa"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layoutExpandido"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/app"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:hint="App"
+            android:imeOptions="actionSearch"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/pesquisa"
+            android:layout_width="76dp"
+            android:layout_height="33dp"
+            android:hint="Pesquisar app"
+            android:scaleX="0.3" />
+    </LinearLayout>
+
+</FrameLayout>
