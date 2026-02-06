@@ -67,20 +67,13 @@ Essa classe **não depende de Activity**, podendo ser utilizada diretamente pelo
 
 ---
 
-## 🔐 Permissões Necessárias
-
-O aplicativo requer a permissão abaixo para exibir o overlay:
-
-```xml
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-
----
 
 
-👨‍💻 Autor
+##👨‍💻 Autor
 
 Gustavo Ewerthon
 Desenvolvedor Android
 Foco em automação, interfaces flutuantes e sistemas inteligentes
+
 
 
