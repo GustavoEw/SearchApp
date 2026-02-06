@@ -67,13 +67,12 @@ Essa classe **não depende de Activity**, podendo ser utilizada diretamente pelo
 
 ---
 
-
-
-##👨‍💻 Autor
+# 👨‍💻 Autor
 
 Gustavo Ewerthon
 Desenvolvedor Android
 Foco em automação, interfaces flutuantes e sistemas inteligentes
+
 
 
 
